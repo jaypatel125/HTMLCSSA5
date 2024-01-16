@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Jay Patel, 000881881-->
+        <title>
+            Outdoor Adventure Reviews
+        </title>
+        <link href="advanture.css" type="text/css" rel="stylesheet" media="screen">
+        <link href="mobile.css" type="text/css" rel="stylesheet" media="screen">
+        <link href="print.css" type="text/css" rel="stylesheet" media="print">
+        <style>
+            p{
+                margin: 0;
+                }
+
+            form{
+                background-color: darkorchid;
+                color: white;
+                margin: 0 10%;
+                padding: 0.75em;
+                margin-bottom: 1em;
+            }
+
+            fieldset{
+                border:2px solid white;
+                margin:20px ;
+            }
+
+            #about, #reviews, #intrestedtrip{
+                padding: 0 0 5px 5px;
+            }
+
+            #fname, #lname, #phone, #email {
+                background-color: orchid;
+            }
+
+            #fnamelabel{padding: 0 10px 0 46px;}
+            #lnamelabel{padding: 0 10px 0 48px;}
+            #phonelabel{margin: 0 10px 0 15px;}
+            #emaillabel{padding: 0 10px 0 20px;}
+
+            .optionbox{
+                padding-bottom:10px;
+            }
+
+
+            #button1, #button2{
+                background-color: orchid;
+            }
+
+            .buttonside{
+                margin:5px 0px 20px 20px;
+                padding-bottom: 15px;
+            }
+
+            .image{
+                text-align: center;
+                margin-bottom: 15px;
+                }
+        </style>
+    </head>
+    <body>
+        <h1>Outdoor Adventure Seminars 2022/2023</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="seminars.html">Seminars</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </nav>
+
+        <form method="post" action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+        <input type="hidden" name="formname" value="Outdoor Advanture Trip Reviews">
+            <fieldset id="about">
+                <legend>About You (optional)</legend>
+                <p>I usually prefer to trips this time of year (select all that apply):</p>
+                    <div class="optionbox">
+                        <select name="triptime" multiple >
+                            <option>Winter</option>
+                            <option>Spring</option>
+                            <option>Summer</option>
+                            <option>Fall</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label id="fnamelabel" for="fname">First Name</label>
+                        <input id="fname" type="text" name="firstname"  size="20" maxlength="20" required>
+                    </div>
+                    <div>
+                        <label id="lnamelabel" for="lname">Last Name</label>
+                        <input id="lname" type="text" name="lastname" size="20" maxlength="20" required>
+                    </div>
+                    <div>
+                        <label id="phonelabel" for="phone">Phone Number</label>
+                        <input id="phone" type="text" name="phone" size="12" maxlength="12" placeholder="123-456-7890" required>
+                    </div>
+                    <div>
+                        <label id="emaillabel" for="email">Email Address</label>
+                        <input id="email" type="email" name="email" placeholder="name@example.com" size="40" maxlength="40" required>
+                    </div>
+            </fieldset>
+            
+            <fieldset id="reviews">
+                <legend>Trip Reviews</legend>
+                <div class="optionbox">
+                    <select name="place">
+                        <option value="Alberta Rural">Alberta Rural</option>
+                        <option value="B.C. Coast" selected>B.C. Coast</option>
+                        <option value="Ontario Lake Superior">Ontario Lake Superior</option>
+                        <option value="PEI">PEI</option>
+                        <option value="Nova Scotia Cabot Trail">Nova Scotia Cabot Trail</option>
+                    </select>
+                
+                    <select name="days">
+                        <option>5 Days</option>
+                        <option>7 Days</option>
+                        <option>10 Days</option>
+                        <option>14 Days</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Your rating:</p>
+                    <div><input type="radio" name="rating" id="4" value="4" checked>
+                        <label for="4">
+                        <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                        <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                        <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                        <img src="images/wheel_sm.jpg" alt="wheel_sm"></label>
+                    </div>
+                        
+                    <div><input type="radio" name="rating" id="3" value="3">
+                        <label for="3">
+                        <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                        <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                        <img src="images/wheel_sm.jpg" alt="wheel_sm"></label>
+                    </div>
+                        
+                    <div><input type="radio" name="rating" id="2" value="2">
+                        <label for="2">
+                        <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                        <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                        </label>
+                    </div>
+                        
+                    <div><input type="radio" name="rating" id="1" value="1">
+                        <label for="1">
+                        <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Comments:</p>
+                    <textarea name="comments"  rows="7" cols="65"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset id="intrestedtrip">
+                <legend>I would be intrested in these trip: (check all that apply)</legend>
+                <div class="box">
+                    <input type="checkbox" name="trips" value="Sea or Lake Coast" id="sea">
+                    <label for="sea">Sea or Lake Coast</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" name="trips" value="Rural" id="Rural">
+                    <label for="Rural">Rural</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" name="trips" value="Mountains" id="Mountains" checked>
+                    <label for="Mountains">Mountains</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" name="trips" value="Others" id="Others">
+                    <label for="Others">Other (please specify)</label>
+                    <input type="text" name="other" size="20"> 
+                </div>
+            </fieldset>
+
+            <div class="buttonside">
+            <input id="button1" type="submit" value="SEND REVIEW">
+            <input id="button2" type="reset" value="CANCLE">
+            </div>
+        </form>
+
+        <div class="image">
+            <img src="images/Screenshot.png" alt="Screenshot">
+        </div>
+
+        <footer>
+            <img src="images/outdooradventurehorizontal.png" alt="outdooradventurehorizontal">
+        </footer>
+
+    </body>
+</html>

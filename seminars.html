@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Jay Patel, 000881881-->
+        <title>Outdoor Adventure Seminars</title>
+        <link href="advanture.css" type="text/css" rel="stylesheet" media="screen">
+        <link href="mobile.css" type="text/css" rel="stylesheet" media="screen">
+        <link href="print.css" type="text/css" rel="stylesheet" media="print">
+    
+        <style>
+            table{
+            margin: auto 70px auto 70px;
+            }
+
+            .table1 .a1 {border-left: 10px solid orchid;}
+            .table1 .a2 {border-left: 10px solid cyan;}
+            .table1 .a3 {border-left: 10px solid #FFFACD;}
+            .table1 .a4 {border-left: 10px solid #F4AF60;}
+
+            .table1{
+                margin:20px 0 10px 17.5%;
+                }
+
+            .caption1{
+                text-align: left;
+                caption-side: top;
+            }
+
+            .table2 tbody th{
+                padding: 15px;
+            }
+
+            thead tr th {
+                background-color: #002759;
+                color: white;
+            }
+
+            tbody tr th {
+                background-color: #DDEEFF;
+            }
+
+            table{
+                margin: 0 15%;
+            }
+
+            .table2{
+                margin: auto;
+                border: 1px solid black;
+                border-collapse: collapse;
+                width: 65%;
+                margin-right: auto;
+                margin-right: auto;
+            }
+
+            thead tr th{
+                background-color: #002759;
+                color: white;
+            }
+
+            .table2 td, .table2 th {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            .caption2{
+                text-align: right;
+                caption-side: bottom;
+            }
+
+            .bc{
+                background-color: orchid;
+            }
+
+            .hk{
+                background-color: #FFFACD;
+            }
+
+            .cm{
+                background-color: #F4AF60;
+            }
+
+            .ldc{
+                background-color: aqua;
+            }
+
+            .ns{
+                background-image: url(images/dust.jpg);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Outdoor Adventure Seminars 2022/2023</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="#">Seminars</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </nav>
+        <table class="table1">
+            <caption class="caption1">
+                Legend:
+            </caption>
+            <thead>
+                <tr>
+                    <td class="a1">Beginner Cycling</td>
+                    <td class="a2">Long Distance Cycling</td>
+                    <td class="a3">Hiking</td>
+                    <td class="a4">Camping</td>
+                </tr>
+            </thead>
+        </table>
+
+        <table class="table2">
+            <caption class="caption2">Schedule is subject to change</caption>
+            <thead>
+                <tr class="row0">
+                    <th>Day</th>
+                    <th>7am-9am</th>
+                    <th>9am-11am</th>
+                    <th>11am-12pm</th>
+                    <th>12pm-2pm</th>
+                    <th>2pm-4pm</th>
+                    <th>6pm-8pm</th>
+                    <th>8pm-10pm</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <!-- 
+                bc=Beginner Cycling
+                hk=Hiking
+                cm=Camping
+                ns=No Seminars
+                ldc=Long Distance Cycling 
+                -->
+
+                <tr><!-- row-1 -->
+                    <th>Monday</th>
+                        <td class="bc">Beginner Cycling</td>
+                        <td class="hk">Hiking</td>
+                        <td colspan="5" class="cm">Camping</td>
+                </tr>
+
+                <tr><!-- row-2 -->
+                    <th>Tuesday</th>
+                        <td colspan="7" class="ns">Reserved for groups</td>
+                </tr>
+
+                <tr><!-- row-3 -->
+                    <th>Wednesday</th>
+                        <td rowspan="2" class="ldc">Long Distance Cycling Part 1</td>
+                            <td></td>
+                            <td class="bc">Beginner Cycling</td>
+                            <td rowspan="2" class="cm">Camping in Asia</td>
+                            <td rowspan="2" class="ldc">Long Distance Cycling Part 2</td>
+                            <td rowspan="3" colspan="2" class="hk">Hiking</td>
+                </tr>
+
+                <tr><!-- row-4 -->
+                <th>Thursday</th>
+                    <td class="cm">Camping</td>
+                </tr>
+
+                <tr><!-- row-5 -->
+                <th>Friday</th>
+                    <td rowspan="4" class="cm">Camping in Europe</td>
+                    <td colspan="2" class="bc">Beginner Cycling</td>
+                </tr>
+
+                <tr><!-- row-6 -->
+                    <th>Saturday</th>
+                        <td colspan="3" rowspan="2" class="hk">Hiking</td>
+                        <td class="bc">Beginner Cycling</td>
+                        <td colspan="2" rowspan="2" class="ldc">Long Distance Cycling Part 1 and Part 2</td>
+                </tr>
+
+                <tr><!-- row-7 -->
+                    <th>Sunday</th>
+                </tr>
+
+                <tr><!-- row-8 -->
+                    <th>Holidays</th>
+                        <td colspan="2" class="ldc">Long Distance Cycling</td>
+                        <td colspan="4" class="ns">No Seminars</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            <img src="images/outdooradventurehorizontal.png" alt="outdooradventurehorizontal">
+        </footer>
+
+
+    </body>
+</html>
